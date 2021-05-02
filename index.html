@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section id="nav-section">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <!-- navbar-brand is for logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/dreambird-logo.png" alt="bird" width="60px" height="60px">
+                </a>
+                <!-- this is button for repsponsiveness -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Video</a>
+                                <a class="dropdown-item" href="#">Gallery</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="#">Music</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-2">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <!-- To align item to left we are using another ul  -->
+                    <ul class="navbar ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exampleModal" data-toggle="modal">Sign Up</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <!-- You must have to paste the Model code outside the
+           Nav bar so that it can work easily
+         -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Enter Credentials</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail" placeholder="email" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="password" />
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Slider -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <section id="slider-section">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slider.jpg" class="d-block w-100" alt="slider">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider4.jpg" class="d-block w-100" alt="slider">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider5.jpg" class="d-block w-100" alt="slider">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider6.jpg" class="d-block w-100" alt="slider">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider9.jpg" class="d-block w-100" alt="slider">
+                    </div>
+                </div>
+                <!-- This is for icon that appear on left and right -->
+                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+        </div>
+    </section>
+    <br />
+    <!-- Side bar -->
+    <div class="row container-fluid">
+        <div class="col-2">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#elect" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true">Electronics</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#cloth" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">Clothing</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#groce" role="tab"
+                    aria-controls="v-pills-messages" aria-selected="false">Groceries</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#vehi" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false">Vehicles</a>
+            </div>
+        </div>
+        <div class="col-10 container">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane show active" id="elect" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <h3>Electronics</h3>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                                aria-controls="nav-home" aria-selected="true">Laptop</a>
+                            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                                aria-controls="nav-profile" aria-selected="false">Tv</a>
+                            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                                aria-controls="nav-contact" aria-selected="false">Appliance</a>
+                            <a class="nav-link" id="nav-mobile-tab" data-toggle="tab" href="#nav-appliance" role="tab"
+                                aria-controls="nav-mobile" aria-selected="false">Mobile</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/lap1.jpg" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/lap1.jpg" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap5.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/tv1.png" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/tv.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/tv2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/tv3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/tv4.png" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/tv5.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/tv.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/tv3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                    <td class="text-center">
+                                        LED
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/ap1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/ap2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/ap2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/ap4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/ap4.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/ap5.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/ap1.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/ap2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                    <td class="text-center">
+                                        Appliance
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-appliance" role="tabpanel" aria-labelledby="nav-mobile-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/4.jpg" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/1.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/1.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Samsung
+                                    </td>
+                                    <td class="text-center">
+                                        Samsung
+                                    </td>
+                                    <td class="text-center">
+                                        Samsung
+                                    </td>
+                                    <td class="text-center">
+                                        Touch Pad
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/lap1.jpg" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/lap2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/1.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Gamming Laptop
+                                    </td>
+                                    <td class="text-center">
+                                        Samsung
+                                    </td>
+                                    <td class="text-center">
+                                        Touch Pad
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="cloth" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <h3>Clothing</h3>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="men-tab" data-toggle="tab" href="#men" role="tab"
+                                aria-controls="men" aria-selected="true">Men's Wear</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="women-tab" data-toggle="tab" href="#women" role="tab"
+                                aria-controls="women" aria-selected="false">Women's Wear</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="child-tab" data-toggle="tab" href="#child" role="tab"
+                                aria-controls="child" aria-selected="false">Children's Wear</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="winter-tab" data-toggle="tab" href="#winter" role="tab"
+                                aria-controls="winter" aria-selected="false">Winter's Wear</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="men" role="tabpanel" aria-labelledby="men-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/m1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/m2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/m3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/m4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/m5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/m1.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/m3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/m4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Men Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="women" role="tabpanel" aria-labelledby="women-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/w1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/w2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/w3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/w4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+
+                                <td>
+                                    <img src="./img/w5.jfif" alt="lap1" width="200px" height="250px">
+                                </td>
+                                <td>
+                                    <img src="./img/w2.jfif" alt="lap2" width="200px" height="250px">
+                                </td>
+                                <td>
+                                    <img src="./img/w3.jfif" alt="lap2" width="200px" height="250px">
+                                </td>
+                                <td>
+                                    <img src="./img/w4.jfif" alt="lap2" width="200px" height="250px">
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Women Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="child" role="tabpanel" aria-labelledby="child-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/c1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/c2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/c3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/c4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Collection -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/c5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/c6.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/c3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/c4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                    <td class="text-center">
+                                        children Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="winter" role="tabpanel" aria-labelledby="winter-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/wi1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/wi2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/wi3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/wi4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Collection -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/wi5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/wi6.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/wi3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/wi4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                    <td class="text-center">
+                                        Winter Collection
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="groce" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <h3>Groceries</h3>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ber-tab" data-toggle="tab" href="#ber" role="tab"
+                                aria-controls="ber" aria-selected="true">berverages</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab"
+                                aria-controls="breakfast" aria-selected="false">breakfast</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="daily-tab" data-toggle="tab" href="#daily" role="tab"
+                                aria-controls="daily" aria-selected="false">Daily Product</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="food-tab" data-toggle="tab" href="#food" role="tab"
+                                aria-controls="food" aria-selected="false">Food</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="ber" role="tabpanel" aria-labelledby="ber-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/b1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/b2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/b3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/b4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/b5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/b2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/b3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/b4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                    <td class="text-center">
+                                        berverages
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/bk1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/bk2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/bk3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/bk4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/bk5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/bk6.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/bk2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/bk1.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                    <td class="text-center">
+                                        breakfast
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="daily" role="tabpanel" aria-labelledby="daily-tab">
+                            <table class="table">
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/d1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/d2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/d3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/d4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/d5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/d1.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/d3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/d2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                    <td class="text-center">
+                                        Daily Product
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="food-tab">
+                            <table class="table">
+
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/f1.jpg" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/f2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/f3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/f4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/f5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/f6.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/f3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/f4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                    <td class="text-center">
+                                        Food
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="vehi" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <h3>Vehicles</h3>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="nav-oil-tab" data-toggle="tab" href="#nav-oil" role="tab"
+                                aria-controls="nav-oil" aria-selected="true">Oil</a>
+                            <a class="nav-link" id="nav-tire-tab" data-toggle="tab" href="#nav-tire" role="tab"
+                                aria-controls="nav-tire" aria-selected="false">Tire</a>
+                            <a class="nav-link" id="nav-electronics-tab" data-toggle="tab" href="#nav-electronics"
+                                role="tab" aria-controls="nav-electronics" aria-selected="false">Electronics</a>
+                            <a class="nav-link" id="nav-acce-tab" data-toggle="tab" href="#nav-acce" role="tab"
+                                aria-controls="nav-acce" aria-selected="false">Accessories</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-oil" role="tabpanel"
+                            aria-labelledby="nav-oil-tab">
+                            <table class="table">
+
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/v1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/v2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/v3.png" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/v4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/v1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/v2.jpg" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/v3.png" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/v4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                    <td class="text-center">
+                                        Oil
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-tire" role="tabpanel" aria-labelledby="nav-tire-tab">
+                            <table class="table">
+
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/t1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/t2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/t3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/t4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/t5.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/t3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/t2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/t1.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                    <td class="text-center">
+                                        Tire
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-electronics" role="tabpanel"
+                            aria-labelledby="nav-electronics-tab">
+                            <table class="table">
+
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/e1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/e2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/e3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/e4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/e4.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/e3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/e2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/e1.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                    <td class="text-center">
+                                        Electronics
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-acce" role="tabpanel" aria-labelledby="nav-acce-tab">
+                            <table class="table">
+
+                                <!-- First Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/a5.jpg" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/a2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/a3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/a2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                                <!-- 2nd Row -->
+                                <tr>
+                                    <td>
+                                        <img src="./img/a1.jfif" alt="lap1" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/a2.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/a3.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                    <td>
+                                        <img src="./img/a4.jfif" alt="lap2" width="200px" height="250px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                    <td class="text-center">
+                                        Accessories
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                    <td class="text-center">
+                                        <Button class="btn btn-primary">Buy</Button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-sm-4">
+                <img src="./img/dreambird-logo.png" alt="bird" width="90px" height="90px">
+            </div>
+            <div class="col-lg-7 ol-sm-4">
+                <ul>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Help center</a>
+                    </li>
+                    <li>
+                        <a href="">Accessiblity Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Our clients</a>
+                    </li>
+                    <li>
+                        <a href="">Site Map</a>
+                    </li>
+                    <li>
+                        <a href="">term of Servies & honor code</a>
+                    </li>
+                    <p>
+                        CopyRight &copy; 2021, 2018cs621@ All right Reserved except where noted
+                    </p>
+                </ul>
+
+            </div>
+            <div class="cl-lg-4 col-sm-4">
+                <ul>
+                    <li>
+                        <img src="./img/fb_icon.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="./img/g+.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="./img/linkedin-icon.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="./img/youtube-logo.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/twiiter-icon.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Javascript bundle by bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
